@@ -55,7 +55,7 @@ body {
   width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .container-nav {
   display: flex;
@@ -145,8 +145,7 @@ body {
   text-align: center;
 }
 .container-hero {
-  margin-top: 0 autto;
-
+  margin-top: 0 auto;
   padding-top: 225px;
   padding-bottom: 225px;
 }
@@ -161,7 +160,6 @@ body {
   color: var(--main-title-color);
 }
 .hero-button {
-  /* display: inline-block; */
   border-radius: 4px;
   padding: 10px 32px;
   font-weight: 700;
@@ -189,8 +187,6 @@ body {
 }
 .description-list {
   display: flex;
-  /* margin-top: 0;
-  margin-bottom: 0; */
 }
 .description-title {
   margin-top: 0;
@@ -200,7 +196,6 @@ body {
   color: var(--second-title-color);
 }
 .description-text {
-  /* margin-top: 0; */
   line-height: 1.71;
   color: var(--main-text-color);
 }
@@ -218,7 +213,6 @@ body {
 .about-us-list {
   display: flex;
 }
-
 .about-us-item {
   margin-right: 30px;
 }
@@ -229,7 +223,6 @@ body {
 .container-team {
   padding-top: 94px;
 }
-
 .team-list {
   display: flex;
   margin-top: 50px;
@@ -238,6 +231,10 @@ body {
 .team-item {
   margin-right: 30px;
   text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item:last-child {
   margin-right: 0;
@@ -306,8 +303,6 @@ body {
 .filtr-list {
   display: flex;
   justify-content: center;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 .filtr-item {
   margin-right: 8px;
@@ -317,13 +312,11 @@ body {
   margin-right: 0;
 }
 .filtr-button {
-  /* display: inline-block; */
   border-radius: 4px;
   min-width: 73;
   height: 38px;
   padding: 6px 22px;
   text-align: center;
-
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -342,20 +335,21 @@ body {
 .container-portfolio {
   padding-bottom: 94px;
 }
-
 .portfolio-list {
   display: flex;
   margin-top: -20px;
   margin-left: -20px;
   flex-wrap: wrap;
 }
-
 .portfolio-item {
   flex-grow: 1;
   flex-basis: calc(100% / 3-30px);
   margin-left: 20px;
   margin-top: 20px;
   padding-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .portfolio-item img {
   margin-bottom: 20px;
