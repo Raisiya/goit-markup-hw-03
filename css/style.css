@@ -1,0 +1,359 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --main-text-color: #757575;
+  --main-title-color: #ffffff;
+  --second-title-color: #212121;
+  --adress-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --first-button-color: #ffffff;
+  --second-button-color: #f5f4fa;
+  --logo-color: #000000;
+  --second-background-color: #2f303a;
+  --main-background-color: #e5e5e5;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0%;
+}
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: var(--main-text-color);
+  background-color: var(--main-title-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* -----Navigation----- */
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  outline: 2px solid tomato;
+}
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 50px;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.logo-link {
+  padding-right: 93px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--accent-color);
+}
+.logo1 {
+  color: var(--logo-color);
+}
+.logo {
+  color: var(--accent-color);
+}
+.nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.contacts-item {
+  margin-left: 50px;
+}
+.contacts-item:first-child {
+  margin-left: 0;
+}
+.contacts-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+.contacts-link:last-child {
+  margin-right: 0;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+.contacts-list {
+  display: flex;
+  margin-left: 50px;
+}
+.contacts-list:first-child {
+  margin-left: 0;
+}
+.contacts {
+  margin-left: auto;
+}
+
+/* -----Hero------ */
+.hero {
+  background: var(--second-background-color);
+  text-align: center;
+}
+.container-hero {
+  margin-top: 0 autto;
+
+  padding-top: 225px;
+  padding-bottom: 225px;
+}
+.hero-title {
+  margin-bottom: 30px;
+  align-items: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.hero-button {
+  /* display: inline-block; */
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--first-button-color);
+  background-color: var(--accent-color);
+}
+/* -----Description------ */
+.container-description {
+  display: flex;
+  padding-top: 119px;
+  padding-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.description-item {
+  margin-right: 30px;
+}
+.description-item:last-child {
+  margin-right: 0;
+}
+.description-list {
+  display: flex;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+}
+.description-title {
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+.description-text {
+  /* margin-top: 0; */
+  line-height: 1.71;
+  color: var(--main-text-color);
+}
+
+/* -----About us------ */
+
+.about-us-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--second-title-color);
+}
+.about-us-list {
+  display: flex;
+}
+.about-img {
+  margin-right: 30px;
+}
+.aout-us-item {
+}
+/* -----Team------ */
+.container-team {
+  padding-top: 94px;
+}
+.team-list {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 94px;
+}
+.team-item {
+  margin-right: 30px;
+}
+.team-img {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.team-caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--second-title-color);
+}
+.team-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--second-title-color);
+}
+.team-link {
+  text-decoration: none;
+}
+.team-text {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-text-color);
+}
+/* -----Footer------ */
+.container-footer {
+}
+.footer {
+  background: var(--second-background-color);
+}
+.logo-link {
+  padding-top: 60px;
+}
+.adress-link,
+.adress-link1 {
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.adress-link:hover,
+.adress-link:focus,
+.adress-link1:hover,
+.adress-link1:focus {
+  color: var(--first-button-color);
+}
+.logo2 {
+  color: var(--first-button-color);
+}
+
+/* ------Портфолио----- */
+.container-filtr {
+  padding-top: 94px;
+}
+.filtr-list {
+  display: flex;
+  justify-content: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+.filtr-item {
+  margin-right: 8px;
+  margin-bottom: 34px;
+}
+.filtr-item:last-child {
+  margin-right: 0;
+}
+.filtr-button {
+  /* display: inline-block; */
+  border-radius: 4px;
+  min-width: 73;
+  height: 38px;
+  padding: 6px 22px;
+  text-align: center;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  color: var(--second-title-color);
+  background-color: var(--second-button-color);
+}
+.filtr-button:hover,
+.filtr-button:focus,
+.filtr-button:active {
+  color: var(--first-button-color);
+  background-color: var(--accent-color);
+}
+.container-portfolio {
+  display: flex;
+}
+
+.portfolio-list {
+  margin-top: -20px;
+  margin-left: -20px;
+}
+.portfolio-item {
+  flex-basis: calc(10% / 3-30px);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.portfolio-link {
+  text-decoration: none;
+  font-style: normal;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-text-color);
+}
