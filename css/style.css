@@ -298,7 +298,9 @@ body {
 
 /* ------Портфолио----- */
 .container-filtr {
+  width: auto;
   padding-top: 94px;
+  border-top: 1px solid #ececec;
 }
 .filtr-list {
   display: flex;
