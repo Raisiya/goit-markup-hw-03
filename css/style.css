@@ -361,6 +361,8 @@ body {
   font-style: normal;
 }
 .portfolio-title {
+  margin-left: 20px;
+  margin-right: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -368,6 +370,8 @@ body {
   color: var(--second-title-color);
 }
 .portfolio-text {
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
