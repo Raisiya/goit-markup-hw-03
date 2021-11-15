@@ -27,7 +27,7 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0%;
+  padding: 0;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -50,6 +50,13 @@ body {
   margin: -1px;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+img {
+  display: block;
+  max-width: 100;
+}
 /* -----Navigation----- */
 .container {
   width: 1200px;
@@ -140,14 +147,13 @@ body {
 }
 
 /* -----Hero------ */
-.hero {
+.main {
   background: var(--second-background-color);
-  text-align: center;
 }
-.container-hero {
-  margin-top: 0 auto;
-  padding-top: 225px;
-  padding-bottom: 225px;
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -160,21 +166,30 @@ body {
   color: var(--main-title-color);
 }
 .hero-button {
+  width: 200px;
+  height: 50px;
   border-radius: 4px;
-  padding: 10px 32px;
+  border-color: transparent;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  text-align: center;
   color: var(--first-button-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 /* -----Description------ */
-.container-description {
+.about-img {
+  display: block;
+}
+.container-description,
+.container-about-us {
   display: flex;
-  padding-top: 119px;
+  padding-top: 94px;
   padding-bottom: 94px;
   margin-top: 0;
   margin-bottom: 0;
@@ -189,7 +204,7 @@ body {
   display: flex;
 }
 .description-title {
-  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -199,9 +214,10 @@ body {
   line-height: 1.71;
   color: var(--main-text-color);
 }
-
 /* -----About us------ */
-
+.container-about-us {
+  display: block;
+}
 .about-us-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -220,13 +236,19 @@ body {
   margin-right: 0;
 }
 /* -----Team------ */
+.team {
+  background-color: var(--second-button-color);
+}
 .container-team {
+  background-color: var(--second-button-color);
   padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .team-list {
   display: flex;
   margin-top: 50px;
-  padding-bottom: 94px;
 }
 .team-item {
   margin-right: 30px;
@@ -279,6 +301,7 @@ body {
 }
 .adress-list {
   margin-top: 20px;
+  font-style: normal;
 }
 .adress-link,
 .adress-link1 {
@@ -297,18 +320,20 @@ body {
 }
 
 /* ------Портфолио----- */
-.container-filtr {
-  width: auto;
+.main1 {
   padding-top: 94px;
-  border-top: 1px solid #ececec;
+  padding-bottom: 94px;
+}
+.portfolio-img {
+  display: block;
 }
 .filtr-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filtr-item {
   margin-right: 8px;
-  margin-bottom: 34px;
 }
 .filtr-item:last-child {
   margin-right: 0;
@@ -323,10 +348,10 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   cursor: pointer;
   color: var(--second-title-color);
   background-color: var(--second-button-color);
+  border-color: transparent;
 }
 .filtr-button:hover,
 .filtr-button:focus,
@@ -334,35 +359,24 @@ body {
   color: var(--first-button-color);
   background-color: var(--accent-color);
 }
-.container-portfolio {
-  padding-bottom: 94px;
-}
 .portfolio-list {
   display: flex;
-  margin-top: -20px;
-  margin-left: -20px;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .portfolio-item {
-  flex-grow: 1;
-  flex-basis: calc(100% / 3-30px);
-  margin-left: 20px;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
-}
-.portfolio-item img {
-  margin-bottom: 20px;
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
 }
 .portfolio-link {
   text-decoration: none;
   font-style: normal;
 }
 .portfolio-title {
-  margin-left: 20px;
-  margin-right: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -370,13 +384,10 @@ body {
   color: var(--second-title-color);
 }
 .portfolio-text {
-  margin-left: 20px;
-  margin-right: 20px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
 }
-img {
-  width: 100%;
-  display: block;
+.art-text {
+  padding: 20px 24px;
 }
