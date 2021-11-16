@@ -77,11 +77,14 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
+ 
 }
 .nav-item {
   list-style: none;
   margin-right: 50px;
 }
+.nav-item:first-child {
+  margin-right: 0;}
 .nav-item:last-child {
   margin-right: 0;
 }
@@ -127,6 +130,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
+  margin-left: 0;
 }
 .contacts-link:last-child {
   margin-right: 0;
@@ -137,24 +141,20 @@ img {
 }
 .contacts-list {
   display: flex;
-  margin-left: 50px;
-}
+  margin-left: 330px;}
 .contacts-list:first-child {
   margin-left: 0;
-}
-.contacts {
-  margin-left: auto;
 }
 
 /* -----Hero------ */
 .main {
   background: var(--second-background-color);
-}
-.hero {
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.hero {
+  text-align: center;
+  }
 .hero-title {
   margin-bottom: 30px;
   align-items: center;
@@ -186,14 +186,20 @@ img {
 .about-img {
   display: block;
 }
-.container-description,
 .container-about-us {
-  display: flex;
-  padding-top: 94px;
+  display: block;
   padding-bottom: 94px;
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.description {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container-description { display: flex;
+  margin-top: 0;
+  margin-bottom: 0;}
 .description-item {
   margin-right: 30px;
 }
@@ -238,13 +244,10 @@ img {
 /* -----Team------ */
 .team {
   background-color: var(--second-button-color);
-}
+ padding-top: 94px;
+  padding-bottom: 94px;}
 .container-team {
   background-color: var(--second-button-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .team-list {
   display: flex;
@@ -278,9 +281,6 @@ img {
   line-height: 1.19;
   color: var(--second-title-color);
 }
-.team-link {
-  text-decoration: none;
-}
 .team-text {
   margin-bottom: 30px;
   font-weight: 400;
@@ -289,15 +289,12 @@ img {
   color: var(--main-text-color);
 }
 /* -----Footer------ */
-.container-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer {
   background: var(--second-background-color);
-}
+padding-top: 60px;
+  padding-bottom: 60px;}
 .logo-link {
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 .adress-list {
   margin-top: 20px;
@@ -318,9 +315,8 @@ img {
 .logo2 {
   color: var(--first-button-color);
 }
-
 /* ------Портфолио----- */
-.main1 {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
