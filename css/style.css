@@ -224,6 +224,9 @@ section {
   color: var(--main-text-color);
 }
 /* -----About us------ */
+section.container-about-us {
+  padding-top: 0;
+}
 .about-us-title {
   margin-bottom: 50px;
   font-weight: 700;
