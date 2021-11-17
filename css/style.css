@@ -68,7 +68,7 @@ section {
   width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .container-nav {
   display: flex;
@@ -292,9 +292,6 @@ section {
   background: var(--second-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.logo-link {
-  /* padding-top: 60px; */
 }
 .adress-list {
   margin-top: 20px;
