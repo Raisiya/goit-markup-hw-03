@@ -57,12 +57,18 @@ img {
   display: block;
   max-width: 100;
 }
+
 /* -----Navigation----- */
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 .container-nav {
   display: flex;
@@ -77,14 +83,14 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
- 
 }
 .nav-item {
   list-style: none;
   margin-right: 50px;
 }
 .nav-item:first-child {
-  margin-right: 0;}
+  margin-right: 0;
+}
 .nav-item:last-child {
   margin-right: 0;
 }
@@ -141,7 +147,8 @@ img {
 }
 .contacts-list {
   display: flex;
-  margin-left: 330px;}
+  margin-left: 330px;
+}
 .contacts-list:first-child {
   margin-left: 0;
 }
@@ -154,7 +161,7 @@ img {
 }
 .hero {
   text-align: center;
-  }
+}
 .hero-title {
   margin-bottom: 30px;
   align-items: center;
@@ -188,18 +195,14 @@ img {
 }
 .container-about-us {
   display: block;
-  padding-bottom: 94px;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.description {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.container-description { display: flex;
+.container-description {
+  display: flex;
   margin-top: 0;
-  margin-bottom: 0;}
+  margin-bottom: 0;
+}
 .description-item {
   margin-right: 30px;
 }
@@ -221,9 +224,6 @@ img {
   color: var(--main-text-color);
 }
 /* -----About us------ */
-.container-about-us {
-  display: block;
-}
 .about-us-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -244,8 +244,7 @@ img {
 /* -----Team------ */
 .team {
   background-color: var(--second-button-color);
- padding-top: 94px;
-  padding-bottom: 94px;}
+}
 .container-team {
   background-color: var(--second-button-color);
 }
@@ -291,8 +290,9 @@ img {
 /* -----Footer------ */
 .footer {
   background: var(--second-background-color);
-padding-top: 60px;
-  padding-bottom: 60px;}
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .logo-link {
   /* padding-top: 60px; */
 }
@@ -316,10 +316,6 @@ padding-top: 60px;
   color: var(--first-button-color);
 }
 /* ------Портфолио----- */
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .portfolio-img {
   display: block;
 }
@@ -390,5 +386,4 @@ padding-top: 60px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
 }
