@@ -73,6 +73,7 @@ section {
 .container-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .list {
   list-style: none;
@@ -92,7 +93,7 @@ section {
   margin-right: 0;
 }
 .nav-item:last-child {
-  margin-right: 0;
+  margin-right: auto;
 }
 .logo-link {
   padding-right: 93px;
@@ -127,8 +128,8 @@ section {
 .contacts-item {
   margin-left: 50px;
 }
-.contacts-item:first-child {
-  margin-left: 0;
+.contacts-item:last-child {
+  margin-right: 0;
 }
 .contacts-link {
   font-weight: 500;
@@ -136,21 +137,14 @@ section {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
-  margin-left: 0;
 }
-.contacts-link:last-child {
-  margin-right: 0;
-}
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
 }
 .contacts-list {
   display: flex;
-  margin-left: 330px;
-}
-.contacts-list:first-child {
-  margin-left: 0;
 }
 
 /* -----Hero------ */
